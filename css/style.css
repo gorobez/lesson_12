@@ -9,13 +9,14 @@
 .main {
     background: url('../img/background.webp') 0 0 / cover no-repeat;
     min-height: 100vh;
+    max-height: 100vh;
 }
 
 .main__items {  
     position: relative;
-    top: 300px;
-    min-height: 700px;
-    max-width: 500px;
+    top: 250px;
+    min-height: 400px;
+    max-width: 400px;
     margin: 0 auto;
     transform: translate(25%);
     perspective: 400px;
@@ -29,7 +30,13 @@
 }
 
 .item {
+    width: 80px;
+    height: 80px;
     position: absolute;   
+}
+
+.item img {
+    width: 100%;
 }
 
 
@@ -86,8 +93,8 @@
 
 .main__title {
     position: absolute;
-    top: 80px;
-    right: 350px;
+    top: 30px;
+    right: 30px;
     font-size: 24px;
     border-radius:64% 36% 100% 0% / 85% 62% 38% 15%;
     padding:45px;
